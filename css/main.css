@@ -328,6 +328,10 @@ section{
   max-width: 50%;
 }
 
+.timer{
+  display: flex;
+  font-size: 3vw;
+}
 
 /********timeline*******/
 
@@ -362,6 +366,10 @@ td{
   font-size: 2em;
 }
 
+td a{
+  color: white;
+}
+
 .center-column{
   width: 50%;
   text-align: center;
@@ -386,6 +394,28 @@ td{
   justify-content: center;
   background-color: white;
   z-index: 3;
+  width: 100%;
+}
+
+video{
+
+}
+
+.rsvp{
+  margin-top: 400px;
+  font-size: 8em;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+.hashtag-container{
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.hashtag{
+  color: black;
+  font-size: 3vw;
 }
 
 /********* navigation ******/
@@ -443,13 +473,14 @@ td{
   color: white;
 }
 
-video{
-  margin-bottom: 200px;
-}
+/***** media query*****/
+@media screen and (max-width: 992px) {
+  /******* main********/
+  .hero{
+    max-width: 60%;
+  }
 
-.rsvp{
-  margin-top: 200px;
-  font-size: 8em;
-  text-decoration: underline;
-  font-weight: lighter;
+  h1{
+    font-size: 8vw;
+  }
 }
