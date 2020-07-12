@@ -6,7 +6,7 @@ $(function() {
     var fixed_height = $(".navigation").height();
 
     var toCross_position = $(".timeline").offset().top;
-    var toCross_height = $(".timeline").height();
+    var toCross_height = $(".timeline").height() + 100;
 
   if (fixed_position  < toCross_position) {
     fixed.removeClass('circled-white');
