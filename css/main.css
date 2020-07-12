@@ -334,19 +334,19 @@ h1{
   padding: 100px 0 100px 0;
   justify-content: center;
   z-index: 2;
-  height: 100vh;
 }
 
 table{
   width: 80%;
   color: white;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 th{
   text-transform: uppercase;
   font-weight: lighter;
-  font-size: 45px;
+  font-size: 4vw;
 }
 
 tr{
@@ -392,14 +392,11 @@ td a{
 }
 
 .rsvp{
-  font-size: 8em;
-  text-decoration: underline;
-  font-weight: lighter;
+  font-size: 4vw;
+  margin: 50px 0 50px 0;
 }
 
 .hashtag-container{
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .hashtag{
@@ -409,6 +406,27 @@ td a{
 
 .zoom-container{
   font-size: 4vw;
+}
+
+
+.button {
+  background-color:white;
+  border-radius:28px;
+  border:1px solid #4542c6;
+  display:inline-block;
+  cursor:pointer;
+  padding: 15px 30px 0 30px;
+  text-decoration:none;
+}
+.button:hover {
+  background-color:#4542c6;
+  color: white;
+}
+.button:active {
+  background-color:#4542c6;
+  color: white;
+  position:relative;
+  top:1px;
 }
 
 /********* navigation ******/
@@ -476,7 +494,7 @@ td a{
   .timer{
     font-size: 5vw;
   }
-  
+
   h1{
     font-size: 8vw;
   }
