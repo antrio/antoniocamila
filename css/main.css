@@ -496,8 +496,12 @@ td a{
     font-size: 8vw;
   }
 
+  .invited{
+    margin-bottom: 100px;
+  }
+
   td{
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .hashtag{
