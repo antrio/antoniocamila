@@ -280,6 +280,11 @@ h1{
 }
 
 @font-face {
+  font-family: ortica;
+  src: url("../fonts/ortica/Ortica-Bold.woff") format("woff");
+}
+
+@font-face {
   font-family: grotesk-regular;
   src: url("../fonts/grotesk/FoundersGrotesk-Regular.otf") format("opentype");
 }
@@ -304,6 +309,17 @@ h1{
 
 .font-grotesk-light{
   font-family: grotesk-light, sans-serif;
+}
+
+
+.custom-underline {
+  text-decoration: underline;
+  font-size: 10vw;
+  position: relative;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: white;
+  font-family: ortica-light;
+  background-image: linear-gradient(to top, rgba(255, 255, 0, 0), rgba(0, 0, 0, 0) 2px, #333333 2px, #333333 3px, rgba(0, 0, 0, 0) 3px);
 }
 
 /******* main********/
@@ -331,9 +347,14 @@ h1{
   width: 100%;
   background-color: #4542c6;
   display: flex;
+  flex-direction: column;
   padding: 100px 0 100px 0;
   justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
   z-index: 2;
+  color: white;
 }
 
 table{
@@ -377,6 +398,20 @@ td a{
 .left-column{
   width: 25%;
   text-align: left;
+}
+
+.spirit{
+  text-decoration: underline;
+  font-size: 9vw;
+  font-family: ortica;
+  color: white;
+  margin: 0;
+}
+
+.spirit-invitation{
+  font-size: 9vw;
+  font-family: ortica;
+  margin: 0;
 }
 
 /****** confirmation *******/
