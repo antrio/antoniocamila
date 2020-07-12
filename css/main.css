@@ -306,26 +306,18 @@ h1{
   font-family: grotesk-light, sans-serif;
 }
 
-section{
-  height: 100vh;
-}
-
-.main, .timeline .confirmation {
-  position: sticky;
-  top: 0;
-}
-
 /******* main********/
 
 .main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0.2vh;
+  position: sticky;
+  height: 100vh;
 }
 
 .hero{
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .timer{
@@ -339,9 +331,10 @@ section{
   width: 100%;
   background-color: #4542c6;
   display: flex;
-  align-items: center;
+  padding: 100px 0 100px 0;
   justify-content: center;
   z-index: 2;
+  height: 100vh;
 }
 
 table{
@@ -395,14 +388,10 @@ td a{
   background-color: white;
   z-index: 3;
   width: 100%;
-}
-
-video{
-
+  padding: 100px 0 200px 0;
 }
 
 .rsvp{
-  margin-top: 400px;
   font-size: 8em;
   text-decoration: underline;
   font-weight: lighter;
@@ -410,12 +399,16 @@ video{
 
 .hashtag-container{
   margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .hashtag{
   color: black;
-  font-size: 3vw;
+  font-size: 4vw;
+}
+
+.zoom-container{
+  font-size: 4vw;
 }
 
 /********* navigation ******/
@@ -482,5 +475,13 @@ video{
 
   h1{
     font-size: 8vw;
+  }
+
+  td{
+    font-size: 1em;
+  }
+
+  .hashtag{
+    font-size: 2em;
   }
 }
