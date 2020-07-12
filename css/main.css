@@ -290,7 +290,7 @@ h1{
 }
 
 .uppercase{
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .font-ortica-light{
