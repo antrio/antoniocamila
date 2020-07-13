@@ -303,6 +303,10 @@ h1{
   font-weight: lighter;
 }
 
+.font-ortica-bold{
+  font-family: ortica, serif;
+}
+
 .font-grotesk-regular{
   font-family: grotesk-regular, sans-serif;
 }
@@ -330,25 +334,36 @@ h1{
   align-items: center;
   position: sticky;
   height: 100vh;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.married{
+  margin-bottom: -35px;
 }
 
 .hero{
   max-width: 40%;
 }
 
+.invited{
+  margin: 0;
+}
+
 .timer{
   display: flex;
   font-size: 3vw;
+  color: #654FFF;
 }
 
 /********timeline*******/
 
 .timeline{
   width: 100%;
-  background-color: #4542c6;
+  background-color: #654FFF;
   display: flex;
   flex-direction: column;
-  padding: 100px 0 100px 0;
+  height: 100vh;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -419,11 +434,14 @@ td a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: white;
   z-index: 3;
   width: 100%;
-  padding: 100px 0 200px 0;
+  height: 100vh;
+}
+
+.hashtag-container{
+  margin-top: 100px;
 }
 
 .rsvp{
@@ -438,24 +456,25 @@ td a{
 
 .zoom-container{
   font-size: 4vw;
+  margin-bottom: 200px;
 }
 
 
 .button {
   background-color:white;
   border-radius:28px;
-  border:1px solid #4542c6;
+  border:1px solid #654FFF;
   display:inline-block;
   cursor:pointer;
   padding: 15px 30px 0 30px;
   text-decoration:none;
 }
 .button:hover {
-  background-color:#4542c6;
+  background-color:#654FFF;
   color: white;
 }
 .button:active {
-  background-color:#4542c6;
+  background-color:#654FFF;
   color: white;
   position:relative;
   top:1px;
@@ -465,8 +484,13 @@ td a{
 
 .navigation{
   position: fixed;
-  bottom: 10px;
+  bottom: 0;
   z-index: 100;
+}
+
+.placeholder-navigation {
+  min-height: 128px;
+  width: 100px;
 }
 
 .navigation-list{
@@ -483,7 +507,7 @@ td a{
 .navigation-item-separator{
   width: 50px;
   height: 0;
-  border: 1px solid #4542c6;
+  border: 1px solid #654FFF;
   display: inline;
 }
 
@@ -499,10 +523,10 @@ td a{
   width: 30px;
   height: 30px;
   padding: 10px 10px 10px 10px;
-  border: 1px solid #4542c6;
+  border: 1px solid #654FFF;
   line-height: 1.2;
   text-align: center;
-  color: #4542c6;
+  color: #654FFF;
 }
 
 .circled-white {
@@ -517,8 +541,41 @@ td a{
 }
 
 /***** media query*****/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 750px) {
   /******* main********/
+  .hero{
+    max-width: 70%;
+  }
+  .placeholder-navigation {
+    min-height: 110px;
+    width: 115px;
+  }
+  .timer{
+    font-size: 4vw;
+  }
+
+  h1{
+    font-size: 6vw;
+  }
+
+  td{
+    font-size: 0.8em;
+  }
+
+  .hashtag{
+    font-size: 2em;
+  }
+
+  .button{
+    padding: 10px 30px 0 30px;
+  }
+
+  .zoom-container{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
   .hero{
     max-width: 90%;
   }
@@ -531,15 +588,7 @@ td a{
     font-size: 8vw;
   }
 
-  .invited{
-    margin-bottom: 100px;
-  }
-
-  td{
-    font-size: 0.8em;
-  }
-
-  .hashtag{
-    font-size: 2em;
+  .button{
+    padding: 7px 30px 0 30px;
   }
 }
