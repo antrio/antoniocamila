@@ -423,6 +423,11 @@ td a{
   margin: 0;
 }
 
+.aperitivo{
+  height: 120vh;
+  justify-content: flex-start;
+}
+
 .spirit-invitation{
   font-size: 9vw;
   font-family: ortica;
@@ -489,7 +494,7 @@ td a{
 }
 
 .placeholder-navigation {
-  min-height: 128px;
+  min-height: 150px;
   width: 100px;
 }
 
@@ -547,7 +552,7 @@ td a{
     max-width: 70%;
   }
   .placeholder-navigation {
-    min-height: 110px;
+    min-height: 130px;
     width: 115px;
   }
   .timer{
@@ -572,6 +577,12 @@ td a{
 
   .zoom-container{
     margin: 0;
+  }
+  .spirit{
+    font-size: 19vw;
+  }
+  .spirit-invitation{
+    font-size: 16vw;
   }
 }
 
