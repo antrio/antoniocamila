@@ -494,7 +494,7 @@ td a{
 }
 
 .placeholder-navigation {
-  min-height: 150px;
+  min-height: 180px;
   width: 100px;
 }
 
@@ -552,7 +552,7 @@ td a{
     max-width: 70%;
   }
   .placeholder-navigation {
-    min-height: 130px;
+    min-height: 160px;
     width: 115px;
   }
   .timer{
