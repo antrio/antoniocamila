@@ -34,7 +34,7 @@ function countDown(second,endMinute,endHour,endDay,endMonth,endYear) {
   var interval = setInterval(function() {
     var time = endDate.getTime() - now.getTime();
     if (time < 0) {
-      return;
+      document.getElementById('mytimer').innerHTML = '<div>¡NOS CASAMOS!</div>'
     } else {
       var days = Math.floor(time / 864e5);
       var hours = Math.floor(time / 36e5) % 24;
